@@ -133,7 +133,7 @@ var sendAPIGetRequest = function(userId, myword) {
     var url = "https://wordsapiv1.p.mashape.com/words/" + myword + "/definitions";
     console.log("search url: ",url)
     unirest.get(url)
-    .header("X-Mashape-Key", "hJQxwZl66vmshYKRcu1hUVDB5BNpp1jJmuDjsnrYyokHJ1Zg5T")
+    .header("X-Mashape-Key", "************************************************")
     .header("Accept", "application/json")
     .end(function (result) {
       console.log(result.status, result.headers, result.body);
@@ -150,7 +150,7 @@ var sendAPIGetRequest = function(userId, myword) {
 
 
 var sendAPITransGetRequest = function (userId, phrase) {
-    var APIKEY = "trnsl.1.1.20170212T172459Z.26ad11f3bb0ad9b4.9c4da46c7446acf2030fe3c30c9e75886fb2afdc";
+    var APIKEY = "********************************************************************************";
     var url = "https://translate.yandex.net/api/v1.5/tr.json/translate?lang=en&key="+APIKEY+"&text="+phrase;
     console.log("translate url: ",url)
     unirest.get(url)
